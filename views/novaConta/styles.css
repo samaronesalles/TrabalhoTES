@@ -1,0 +1,74 @@
+body, .container, html{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.formNovoUser {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto; 
+}
+
+#logoTelaNovoUser {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+#logoTelaNovoUser img {
+    position: relative;
+    display: table-cell;
+    margin: auto;
+}
+
+.form-novoUser-input {
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 42px;
+    border-radius: 0px;
+    height: 35px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+}
+
+.form-novoUser-button {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 0px;
+    color: #fff;
+    height: 35px;
+    opacity: .8;
+    margin-top: 50px;
+    cursor: pointer;
+    background: #4423CF;
+    display: block;
+    border: none;
+}
+input[type=date] {
+    text-indent: 10px;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  margin: 1px 7px 30px 7px;
+}
+
+.form-novoUser-check {
+    color: #292929;
+    font-size: 18px;    
+    margin-bottom: 20px;
+    background-color: white;
+}

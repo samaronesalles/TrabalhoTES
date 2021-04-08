@@ -3,7 +3,7 @@ const link = document.querySelector('.linkCrieConta');
 
 link.addEventListener("click", function () {
     modalOverlay.classList.add('active');
-    modalOverlay.querySelector("iframe").src = "novaConta.html";
+    modalOverlay.querySelector("iframe").src = "./novaConta/novaConta.html";
 });
 
 document.querySelector('.close-modal').addEventListener("click", function () {
