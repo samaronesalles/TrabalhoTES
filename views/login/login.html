@@ -3,6 +3,7 @@
 
 <head>
     <title>Dengomeet</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -20,10 +21,10 @@
                 <span>Entre com sua conta. </p> Ou <a href="#">crie uma conta</a></span>
             </div>
 
-            <form action="#" class="form-contact" method="post">
-                <input type="text" class="form-contact-input" name="nome" placeholder="Usuário / Email" required />
-                <input type="password" class="form-contact-input" name="senha" placeholder="Senha" required />
-                <button type="submit" class="form-contact-button">Entrar</button>
+            <form class="form-contact">
+                <input type="text" class="form-contact-input" id="nome" placeholder="Usuário" required />
+                <input type="password" class="form-contact-input" id="senha" placeholder="Senha" required />
+                <button type="button" id='logar' class="form-contact-button">Entrar</button>
             </form>
 
             <div class="spanEsqueceuSenha">
@@ -35,7 +36,7 @@
 
     <div class="modal-overlay">
         <div class="modal">
-            <a class="close-modal">
+            <a class="close-modal" id="btnFechar">
                 <i class="material-icons">close</i>
             </a>
 
@@ -46,6 +47,7 @@
     </div>
 
     <script src="../../scripts/scripts.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
