@@ -7,6 +7,34 @@ onload = () => {
         usuarios = usuariosSalvos
 }
 
+
+// Senha
+document.getElementById('olhoSenha').addEventListener('mousedown', function () {
+    document.getElementById('senha').type = 'text';
+});
+
+document.getElementById('olhoSenha').addEventListener('mouseup', function () {
+    document.getElementById('senha').type = 'password';
+});
+
+document.getElementById('olhoSenha').addEventListener('mousemove', function () {
+    document.getElementById('senha').type = 'password';
+});
+
+// Confirmação de senha
+document.getElementById('olhoConfirmacao').addEventListener('mousedown', function () {
+    document.getElementById('senhaConfirmacao').type = 'text';
+});
+
+document.getElementById('olhoConfirmacao').addEventListener('mouseup', function () {
+    document.getElementById('senhaConfirmacao').type = 'password';
+});
+
+document.getElementById('olhoConfirmacao').addEventListener('mousemove', function () {
+    document.getElementById('senhaConfirmacao').type = 'password';
+});
+
+
 async function dadosValidos(user) {
     if ((user.nome.trim() === '') || (user.nome.length < 5)) {
         alert("Nome do usuário deve ter no mínimo 5 caracteres")

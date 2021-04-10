@@ -59,8 +59,20 @@ body, .container, html{
     display: block;
     border: none;
 }
+
 input[type=date] {
     text-indent: 10px;
+}
+
+.divOlho {
+    text-align: right;
+    margin-right: 35px;
+}
+
+.divOlho .olho {
+  position: absolute;
+  width: 35px;
+  cursor: pointer;
 }
 
 input[type=checkbox]
