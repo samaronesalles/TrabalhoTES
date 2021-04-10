@@ -13,9 +13,10 @@ body, .container, html{
 }
 
 .formNovoUser {
+    display: block;
     width: 90%;
-    background-color: rgb(255, 255, 255);
-    margin: 0 auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logoTelaNovoUser {
