@@ -38,23 +38,34 @@ document.getElementById('olhoConfirmacao').addEventListener('mousemove', functio
 async function dadosValidos(user) {
     if ((user.nome.trim() === '') || (user.nome.length < 5)) {
         alert("Nome do usuário deve ter no mínimo 5 caracteres")
+        document.getElementById('nome').focus()
         return false
     }
 
     if (user.email.indexOf("@") == -1 || user.email.indexOf(".") == -1 || user.email == "" || user.email == null) {
         alert("Por favor, indique um e-mail válido.");
+        document.getElementById('email').focus()
         return false;
     }
 
     if ((user.senha.trim() === '') || (user.senha.length < 8)) {
         alert("A senha do usuário deve ter no mínimo 8 caracteres")
+        document.getElementById('senha').focus()
         return false
     }
 
     if (user.senha !== user.senhaConfirmacao) {
         alert("A senha e a confirmação da senha não são iguais")
+        document.getElementById('senha').focus()
         return false
     }
+
+    if (user.dataNascimento === "") {
+        alert("A Data de nascimento é obrigatória")
+        document.getElementById('dataNascimento').focus()
+        return false
+    }
+
 
     return true
 }
@@ -85,6 +96,10 @@ document.getElementById('salvarUser').addEventListener('click', async function (
     }
 
     localStorage.setItem('usuarios', JSON.stringify(usuarios))
+
+    // Fechando tela modal - Como os dados estarão gravados, basta dar refresh no parent...'
+    parent.location.reload();
+
 });
 
 navigator.serviceWorker.register('./users-sw.js');
