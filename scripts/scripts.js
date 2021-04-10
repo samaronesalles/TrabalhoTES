@@ -10,4 +10,3 @@ document.querySelector('.close-modal').addEventListener("click", function () {
     modalOverlay.classList.remove('active');
     modalOverlay.querySelector("iframe").src = "";
 });
-

@@ -17,24 +17,26 @@
             </div>
 
             <div class="form-novoUser">
-                <form action="#" method="post">
-                    <input type="text" class="form-novoUser-input" name="nome" placeholder="Nome de usuário" required />
-                    <input type="text" class="form-novoUser-input" name="email" placeholder="Endereço de email"
+                <form>
+                    <input type="text" class="form-novoUser-input" id="nome" placeholder="Nome de usuário" required />
+                    <input type="text" class="form-novoUser-input" id="email" placeholder="Endereço de email"
                         required />
-                    <input type="password" class="form-novoUser-input" name="senha" placeholder="Senha" required />
-                    <input type="password" class="form-novoUser-input" name="senhaConfirmacao"
+                    <input type="password" class="form-novoUser-input" id="senha" placeholder="Senha" required />
+                    <input type="password" class="form-novoUser-input" id="senhaConfirmacao"
                         placeholder="Confirmação de senha" required />
-                    <input type="date" class="form-novoUser-input" name="dataNascimento" required />
-                    <input type="checkbox" id="receberEmail" name="receberEmail" value="Boat">
+                    <input type="date" class="form-novoUser-input" id="dataNascimento" required />
+                    <input type="checkbox" id="receberEmail" id="receberEmail">
                     <label class="form-novoUser-check" for="receberEmail">Desejo receber novidades e notícias por
                         email</label>
-                    <button type="submit" class="form-novoUser-button">Confirmar registro</button>
+                    <button type="button" id='salvarUser' class="form-novoUser-button">Confirmar registro</button>
                 </form>
 
             </div>
 
         </div>
     </div>
+
+    <script src="./saveUser.js"></script>
 
 </body>
 
